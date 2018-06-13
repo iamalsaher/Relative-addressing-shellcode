@@ -7,8 +7,8 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2){
 		char *shellcode = argv[1];
-		printf("The length of shellcode is %d\nPress enter to execute shellcode\n",strlen(shellcode));
-		scanf("%*c");
+		printf("The length of shellcode is %d\n",strlen(shellcode));
+		//scanf("%*c");
 		(*(void (*)()) shellcode)();
 		}
 	else{
